@@ -1,0 +1,48 @@
+python verifree.py \
+    --critic_type rloo \
+    --gpus 8 \
+    --enable_prefix_caching \
+    --collocate \
+    --vllm_sleep \
+    --vllm_gpu_ratio 0.45 \
+    --gradient-checkpointing \
+    --flash-attn \
+    --bf16 \
+    --rnd-seed \
+    --learning_rate 0.000001 \
+    --lr_scheduler constant \
+    --kl_penalty_coef 0 \
+    --num_ppo_epochs 1 \
+    --beta 0 \
+    --non_stop_fixed_reward 0 \
+    --oracle_type reward \
+    --oracle math \
+    --pretrain Qwen/Qwen3-8B-Base \
+    --prompt_template ours \
+    --zero-stage 2 \
+    --ref_offload \
+    --prompt_data ./datasets/webdata \
+    --train_split train \
+    --input_key problem \
+    --output_key answer \
+    --max-train 9999999 \
+    --num_prompt_epoch 999 \
+    --prompt_max_length 1024 \
+    --sync_params_every 1 \
+    --num_samples 8 \
+    --max_step_adjustment 8 \
+    --temperature 1 \
+    --top_p 1 \
+    --generate_max_length 3000 \
+    --save_steps 128 \
+    --max_save_num 999 \
+    --max_save_mem 99999999 \
+    --train_batch_size 128 \
+    --train_batch_size_per_device 1 \
+    --rollout_batch_size 16 \
+    --rollout_batch_size_per_device 2 \
+    --pi_buffer_maxlen_per_device 16 \
+    --eval_steps -1 \
+    --reward_source p \
+    --sft_coef_source reward \
+    --debug
