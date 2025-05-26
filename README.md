@@ -1,6 +1,21 @@
-# VeriFree: Reinforcing General Reasoning without Verifiers
+<div align="center">
 
-## Dependency
+# VeriFree: Reinforcing General Reasoning without Verifiers
+[Xiangxin Zhou*](https://scholar.google.com/citations?hl=en&user=eQgIWcQAAAAJ), [Zichen Liu*](https://lkevinzc.github.io/), [Anya Sims*](https://anyasims.github.io/), [Haonan Wang](https://charles-haonan-wang.me/), [Tianyu Pang](https://p2333.github.io/)
+
+[Chongxuan Li](https://zhenxuan00.github.io/), [Liang Wang](https://scholar.google.com.hk/citations?user=8kzzUboAAAAJ), [Min Lin](https://scholar.google.com.sg/citations?user=BGONmkIAAAAJ&hl=en), [Chao Du†](https://duchao0726.github.io/)
+
+*Equal contribution, †Correspondence
+
+</div>
+
+## Overview
+
+![](./figures/verifree.jpg)
+
+
+## Usage
+### Dependency
 
 The code has been tested in the following environment: 
 
@@ -16,10 +31,30 @@ pip install -U oat-llm==0.1.0
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:{PATH_TO_YOUR_USER_DIRECTORY}/.conda/envs/VeriFree/lib/
 ```
 
-## Training
+### Training
 
 The following command is an example for fine-tuning Qwen3 base models by VeriFree policy optimization:
 
 ```
 bash run.sh
 ```
+
+
+## Acknowledgements
+
+- We use [oat](https://github.com/sail-sg/oat) as the training framework.
+- Our model is trained on top of [`Qwen3`](https://huggingface.co/collections/Qwen/qwen3-67dd247413f0e2e4f653967f).
+
+
+## Citation
+If you find our work useful for your research, please consider citing:
+
+```bibtex
+@misc{zhou2025verifree,
+  title={Reinforcing General Reasoning without Verifiers},
+  author={Zhou, Xiangxin and Liu, Zichen and Sims, Anya and Wang, Haonan and Pang, Tianyu and Li, Chongxuan and Wang, Liang and Lin, Min and Du, Chao},
+  howpublished={\url{https://github.com/sail-sg/VeriFree}}
+}
+```
+
+
