@@ -50,10 +50,11 @@ bash run.sh
 If you find our work useful for your research, please consider citing:
 
 ```bibtex
-@misc{zhou2025verifree,
+@article{zhou2025verifree,
   title={Reinforcing General Reasoning without Verifiers},
   author={Zhou, Xiangxin and Liu, Zichen and Sims, Anya and Wang, Haonan and Pang, Tianyu and Li, Chongxuan and Wang, Liang and Lin, Min and Du, Chao},
-  howpublished={\url{https://github.com/sail-sg/VeriFree}}
+  journal={arXiv preprint arXiv:2505.21493},
+  year={2025}
 }
 ```
 
