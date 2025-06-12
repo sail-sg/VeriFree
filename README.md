@@ -24,8 +24,7 @@ conda create -n VeriFree python=3.10 -y
 conda activate VeriFree
 
 pip install torch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1 --index-url https://download.pytorch.org/whl/cu121
-pip install vllm==0.8.4
-pip install -U oat-llm==0.1.0
+pip install oat-llm==0.1.3
 
 # PATH_TO_YOUR_USER_DIRECTORY in the following command should be modified 
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:{PATH_TO_YOUR_USER_DIRECTORY}/.conda/envs/VeriFree/lib/
