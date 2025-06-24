@@ -9,6 +9,11 @@
 
 </div>
 
+<p align="center">
+  📚 <a href="https://arxiv.org/abs/2505.21493">[Paper]</a> |
+  🤗 <a href="https://huggingface.co/collections/zhouxiangxin/verifree-685a1e9509d0db2ed9731c62">[Checkpoints]</a>
+</p>
+
 ## Overview
 
 ![](./figures/verifree.jpg)
